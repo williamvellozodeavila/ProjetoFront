@@ -47,9 +47,13 @@ export default function Home() {
         <InputPesquisa setServicos={setServicos} />
         
         <section className="mt-5 mb-5 max-w-screen-xl mx-auto">
+          <div className="flex flex-row justify-between">
+            <h1 className="mt-5 mb-5 text-3xl font-extrabold leading-none tracking-tight text-blue-500 md:text-3xl lg:text-4xl dark:text-white">Procedimentos Cadastrados </h1>
+            <a href="/novoProcedimento" className="w-44 text-white bg-blue-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center m-5">
+                  + Procedimentos
+            </a>
           
-          <h1 className="mt-5 mb-5 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white">Serviços <span className="underline underline-offset-3 decoration-8 decoration-blue-400 dark:decoration-blue-600">em Destaque</span></h1>
-         
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {listaServicos}

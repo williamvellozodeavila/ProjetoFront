@@ -1,7 +1,6 @@
 "use client"
 import { useForm } from "react-hook-form"
 import { useRouter } from "next/navigation"
-import { Header } from "@/components/Header";
 import { useClienteStore } from "@/context/cliente"
 
 type Inputs = {
@@ -42,7 +41,7 @@ export default function Login() {
         }
       }     
 
-      router.push("/agendadodia")
+      router.push("/servicos")
     } else {
       alert("Erro... Login ou Senha incorretos")
     }
